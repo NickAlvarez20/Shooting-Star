@@ -1,0 +1,31 @@
+//setting up variable positions(stars)
+var xPos = 9;
+var yPos = 10;
+var xPos2 = 327;
+var yPos2 = 381;
+//draw function to draw stars
+draw = function() {
+    background(29, 40, 115);
+    fill(251, 255, 0);
+    ellipse (xPos2, yPos2, 10, 10);
+     ellipse(xPos, yPos, 10, 10);
+     //skyscrapers backdrop
+     fill(255, 0, 72);
+     ellipse(260,50,8,10);
+     fill(255, 0, 72);
+     ellipse(167,14,8,10);
+     fill(255, 0, 72);
+     ellipse(107,50,8,10);
+     fill(255, 0, 72);
+     ellipse(340,15,8,10);
+    fill(0, 200, 255);
+    rect(20, 81, 72, 319, 0);
+    fill(0, 200, 255);
+    rect(106, 164, 51, 239, -8);
+    //animation part
+    xPos += 1;
+    yPos += 1;
+    xPos2 -= 1;
+    yPos2 -= 1;
+    
+};
